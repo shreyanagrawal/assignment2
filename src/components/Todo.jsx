@@ -89,9 +89,9 @@ const Todo = () => {
         </div>
         <div className="action-section">
             <div className="filters">
-                <button onClick={()=>setFilter('all')}>All</button>
-                <button onClick={()=>setFilter('completed')}>Completed</button>
-                <button onClick={()=>setFilter('pending')}>Pending</button>
+                <button onClick={()=>setFilter('all')} className={state.filter === 'all'?'active':''}>All</button>
+                <button onClick={()=>setFilter('completed')} className={state.filter === 'completed'?'active':''}>Completed</button>
+                <button onClick={()=>setFilter('pending')} className={state.filter === 'pending'?'active':''}>Pending</button>
             </div>
             <button className="delete-all" onClick={deleteAll} disabled={filteredTasks.length == 0}>Delete All</button>
         </div>
