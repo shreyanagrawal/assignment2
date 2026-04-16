@@ -126,6 +126,11 @@ span.description{
   color: #000;
   border: 1px solid #000;
 }
+.filters button.active{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
 .delete-all{
   background-color: red;
   color: #fff;
